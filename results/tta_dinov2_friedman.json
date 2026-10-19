@@ -1,0 +1,21 @@
+{
+ "mean_ranks": {
+  "anchored": 8.45,
+  "cotta": 12.3,
+  "eata": 4.5,
+  "geo_anchored": 8.875,
+  "geo_eata": 3.675,
+  "geo_tent": 2.6,
+  "lame": 10.85,
+  "pl": 6.675,
+  "rdumb": 4.1,
+  "sar": 4.3,
+  "source": 9.225,
+  "t3a": 12.15,
+  "tent": 3.3
+ },
+ "friedman_p": 5.860476256446038e-35,
+ "cd": 4.07973766700898,
+ "n_conditions": 20,
+ "k_methods": 13
+}

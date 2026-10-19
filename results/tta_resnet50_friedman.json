@@ -1,0 +1,13 @@
+{
+ "mean_ranks": {
+  "bn": 3.55,
+  "eata": 2.825,
+  "geo_eata": 2.95,
+  "source": 4.575,
+  "tent": 1.1
+ },
+ "friedman_p": 1.6182675815003813e-10,
+ "cd": 1.363887185435188,
+ "n_conditions": 20,
+ "k_methods": 5
+}

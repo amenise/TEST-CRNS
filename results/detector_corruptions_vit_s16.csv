@@ -1,0 +1,133 @@
+target,condition,kind,severity,seed,detected,at_first,delay,false_alarms,n_alarms_target
+no shift (S_hold),S_hold:clean,none,0,0,False,False,,0,0
+no shift (S_hold),S_hold:clean,none,0,1,False,False,,0,0
+no shift (S_hold),S_hold:clean,none,0,2,False,False,,0,0
+season A,A_test:clean,season,0,0,False,False,,0,0
+season A,A_test:clean,season,0,1,False,False,,0,0
+season A,A_test:clean,season,0,2,False,False,,0,0
+season W,W_test:clean,season,0,0,False,False,,0,0
+season W,W_test:clean,season,0,1,False,False,,0,0
+season W,W_test:clean,season,0,2,False,False,,0,0
+season P,P_test:clean,season,0,0,False,False,,0,0
+season P,P_test:clean,season,0,1,False,False,,0,0
+season P,P_test:clean,season,0,2,False,False,,0,0
+gaussian_noise,S_test:gaussian_noise_s1,gaussian_noise,1,0,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s1,gaussian_noise,1,1,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s1,gaussian_noise,1,2,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s2,gaussian_noise,2,0,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s2,gaussian_noise,2,1,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s2,gaussian_noise,2,2,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s3,gaussian_noise,3,0,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s3,gaussian_noise,3,1,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s3,gaussian_noise,3,2,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s4,gaussian_noise,4,0,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s4,gaussian_noise,4,1,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s4,gaussian_noise,4,2,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s5,gaussian_noise,5,0,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s5,gaussian_noise,5,1,True,True,0.0,0,1
+gaussian_noise,S_test:gaussian_noise_s5,gaussian_noise,5,2,True,True,0.0,0,1
+low_light,S_test:low_light_s1,low_light,1,0,True,True,0.0,0,1
+low_light,S_test:low_light_s1,low_light,1,1,True,True,0.0,0,1
+low_light,S_test:low_light_s1,low_light,1,2,True,True,0.0,0,1
+low_light,S_test:low_light_s2,low_light,2,0,True,True,0.0,0,1
+low_light,S_test:low_light_s2,low_light,2,1,True,True,0.0,0,1
+low_light,S_test:low_light_s2,low_light,2,2,True,True,0.0,0,1
+low_light,S_test:low_light_s3,low_light,3,0,True,True,0.0,0,1
+low_light,S_test:low_light_s3,low_light,3,1,True,True,0.0,0,1
+low_light,S_test:low_light_s3,low_light,3,2,True,True,0.0,0,1
+low_light,S_test:low_light_s4,low_light,4,0,True,True,0.0,0,1
+low_light,S_test:low_light_s4,low_light,4,1,True,True,0.0,0,1
+low_light,S_test:low_light_s4,low_light,4,2,True,True,0.0,0,1
+low_light,S_test:low_light_s5,low_light,5,0,True,True,0.0,0,1
+low_light,S_test:low_light_s5,low_light,5,1,True,True,0.0,0,1
+low_light,S_test:low_light_s5,low_light,5,2,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s1,defocus_blur,1,0,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s1,defocus_blur,1,1,False,False,,0,0
+defocus_blur,S_test:defocus_blur_s1,defocus_blur,1,2,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s2,defocus_blur,2,0,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s2,defocus_blur,2,1,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s2,defocus_blur,2,2,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s3,defocus_blur,3,0,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s3,defocus_blur,3,1,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s3,defocus_blur,3,2,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s4,defocus_blur,4,0,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s4,defocus_blur,4,1,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s4,defocus_blur,4,2,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s5,defocus_blur,5,0,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s5,defocus_blur,5,1,True,True,0.0,0,1
+defocus_blur,S_test:defocus_blur_s5,defocus_blur,5,2,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s1,motion_blur,1,0,False,False,,0,0
+motion_blur,S_test:motion_blur_s1,motion_blur,1,1,False,False,,0,0
+motion_blur,S_test:motion_blur_s1,motion_blur,1,2,False,False,,0,0
+motion_blur,S_test:motion_blur_s2,motion_blur,2,0,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s2,motion_blur,2,1,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s2,motion_blur,2,2,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s3,motion_blur,3,0,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s3,motion_blur,3,1,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s3,motion_blur,3,2,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s4,motion_blur,4,0,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s4,motion_blur,4,1,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s4,motion_blur,4,2,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s5,motion_blur,5,0,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s5,motion_blur,5,1,True,True,0.0,0,1
+motion_blur,S_test:motion_blur_s5,motion_blur,5,2,True,True,0.0,0,1
+jpeg,S_test:jpeg_s1,jpeg,1,0,True,True,0.0,0,1
+jpeg,S_test:jpeg_s1,jpeg,1,1,True,True,0.0,0,1
+jpeg,S_test:jpeg_s1,jpeg,1,2,True,True,0.0,0,1
+jpeg,S_test:jpeg_s2,jpeg,2,0,True,True,0.0,0,1
+jpeg,S_test:jpeg_s2,jpeg,2,1,True,True,0.0,0,1
+jpeg,S_test:jpeg_s2,jpeg,2,2,True,True,0.0,0,1
+jpeg,S_test:jpeg_s3,jpeg,3,0,True,True,0.0,0,1
+jpeg,S_test:jpeg_s3,jpeg,3,1,True,True,0.0,0,1
+jpeg,S_test:jpeg_s3,jpeg,3,2,True,True,0.0,0,1
+jpeg,S_test:jpeg_s4,jpeg,4,0,True,True,0.0,0,1
+jpeg,S_test:jpeg_s4,jpeg,4,1,True,True,0.0,0,1
+jpeg,S_test:jpeg_s4,jpeg,4,2,True,True,0.0,0,1
+jpeg,S_test:jpeg_s5,jpeg,5,0,True,True,0.0,0,1
+jpeg,S_test:jpeg_s5,jpeg,5,1,True,True,0.0,0,1
+jpeg,S_test:jpeg_s5,jpeg,5,2,True,True,0.0,0,1
+pixelate,S_test:pixelate_s1,pixelate,1,0,False,False,,0,0
+pixelate,S_test:pixelate_s1,pixelate,1,1,False,False,,0,0
+pixelate,S_test:pixelate_s1,pixelate,1,2,True,True,0.0,0,1
+pixelate,S_test:pixelate_s2,pixelate,2,0,True,True,0.0,0,1
+pixelate,S_test:pixelate_s2,pixelate,2,1,True,True,0.0,0,1
+pixelate,S_test:pixelate_s2,pixelate,2,2,True,True,0.0,0,1
+pixelate,S_test:pixelate_s3,pixelate,3,0,True,True,0.0,0,1
+pixelate,S_test:pixelate_s3,pixelate,3,1,True,True,0.0,0,1
+pixelate,S_test:pixelate_s3,pixelate,3,2,True,True,0.0,0,1
+pixelate,S_test:pixelate_s4,pixelate,4,0,True,True,0.0,0,1
+pixelate,S_test:pixelate_s4,pixelate,4,1,True,True,0.0,0,1
+pixelate,S_test:pixelate_s4,pixelate,4,2,True,True,0.0,0,1
+pixelate,S_test:pixelate_s5,pixelate,5,0,True,True,0.0,0,1
+pixelate,S_test:pixelate_s5,pixelate,5,1,True,True,0.0,0,1
+pixelate,S_test:pixelate_s5,pixelate,5,2,True,True,0.0,0,1
+contrast,S_test:contrast_s1,contrast,1,0,False,False,,0,0
+contrast,S_test:contrast_s1,contrast,1,1,True,True,0.0,0,1
+contrast,S_test:contrast_s1,contrast,1,2,True,True,0.0,0,1
+contrast,S_test:contrast_s2,contrast,2,0,True,True,0.0,0,1
+contrast,S_test:contrast_s2,contrast,2,1,True,True,0.0,0,1
+contrast,S_test:contrast_s2,contrast,2,2,True,True,0.0,0,1
+contrast,S_test:contrast_s3,contrast,3,0,True,True,0.0,0,1
+contrast,S_test:contrast_s3,contrast,3,1,True,True,0.0,0,1
+contrast,S_test:contrast_s3,contrast,3,2,True,True,0.0,0,1
+contrast,S_test:contrast_s4,contrast,4,0,True,True,0.0,0,1
+contrast,S_test:contrast_s4,contrast,4,1,True,True,0.0,0,1
+contrast,S_test:contrast_s4,contrast,4,2,True,True,0.0,0,1
+contrast,S_test:contrast_s5,contrast,5,0,True,True,0.0,0,1
+contrast,S_test:contrast_s5,contrast,5,1,True,True,0.0,0,1
+contrast,S_test:contrast_s5,contrast,5,2,True,True,0.0,0,1
+haze,S_test:haze_s1,haze,1,0,False,False,,0,0
+haze,S_test:haze_s1,haze,1,1,False,False,,0,0
+haze,S_test:haze_s1,haze,1,2,False,False,,0,0
+haze,S_test:haze_s2,haze,2,0,False,False,,0,0
+haze,S_test:haze_s2,haze,2,1,False,False,,0,0
+haze,S_test:haze_s2,haze,2,2,False,False,,0,0
+haze,S_test:haze_s3,haze,3,0,True,True,0.0,0,1
+haze,S_test:haze_s3,haze,3,1,True,True,0.0,0,1
+haze,S_test:haze_s3,haze,3,2,True,True,0.0,0,1
+haze,S_test:haze_s4,haze,4,0,True,True,0.0,0,1
+haze,S_test:haze_s4,haze,4,1,True,True,0.0,0,1
+haze,S_test:haze_s4,haze,4,2,True,True,0.0,0,1
+haze,S_test:haze_s5,haze,5,0,True,True,0.0,0,1
+haze,S_test:haze_s5,haze,5,1,True,True,0.0,0,1
+haze,S_test:haze_s5,haze,5,2,True,True,0.0,0,1

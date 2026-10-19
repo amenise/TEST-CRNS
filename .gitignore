@@ -1,0 +1,58 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# data (large, reproducible from data/bird_shift_data.zip)
+data/bird_shift_data.zip
+data/raw/
+data/processed/
+data/interim/*.npz
+
+# raw run outputs (logits, checkpoints) — aggregated tables live in results/
+runs/
+
+# papers: PDFs and extracted text are re-downloadable (papers/download_papers.py)
+papers/pdf/
+papers/text/
+
+# LaTeX build products
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.bbl
+report/*.blg
+report/*.synctex.gz
+report/*.fls
+report/*.fdb_latexmk
+report/latex_bundle.zip
+
+# fallback copies written when a figure file is locked (installed with PowerShell)
+figures/_pending/
+
+# editor, tool caches and OS files
+.vscode/
+.idea/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local backups and archives
+*.bundle
+*.zip
+
+# private documents (kept locally, not published)
+Technical Test.pdf
+docs/preparation_soutenance.docx
+
+# not published: documentation, bibliography, reports and slides are kept locally
+docs/
+papers/
+report/
+presentation/
+insights/

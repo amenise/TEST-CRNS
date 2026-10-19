@@ -1,0 +1,279 @@
+{
+ "S_train": {
+  "n": 6595,
+  "images_shape": [
+   6595,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 50,
+  "per_class_max": 102,
+  "domain": [
+   "S"
+  ],
+  "months": [
+   5,
+   6,
+   7
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 126.0989446747449
+ },
+ "S_val": {
+  "n": 500,
+  "images_shape": [
+   500,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 5,
+  "per_class_max": 5,
+  "domain": [
+   "S"
+  ],
+  "months": [
+   5,
+   6,
+   7
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 123.87516637436225
+ },
+ "S_hold": {
+  "n": 500,
+  "images_shape": [
+   500,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 5,
+  "per_class_max": 5,
+  "domain": [
+   "S"
+  ],
+  "months": [
+   5,
+   6,
+   7
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 126.78768067070578
+ },
+ "S_test": {
+  "n": 1000,
+  "images_shape": [
+   1000,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 10,
+  "per_class_max": 10,
+  "domain": [
+   "S"
+  ],
+  "months": [
+   5,
+   6,
+   7
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 124.4010722257653
+ },
+ "A_hold": {
+  "n": 500,
+  "images_shape": [
+   500,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 5,
+  "per_class_max": 5,
+  "domain": [
+   "A"
+  ],
+  "months": [
+   8,
+   9,
+   10
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 121.9782190157313
+ },
+ "A_test": {
+  "n": 1000,
+  "images_shape": [
+   1000,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 10,
+  "per_class_max": 10,
+  "domain": [
+   "A"
+  ],
+  "months": [
+   8,
+   9,
+   10
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 121.06836899447279
+ },
+ "W_hold": {
+  "n": 500,
+  "images_shape": [
+   500,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 5,
+  "per_class_max": 5,
+  "domain": [
+   "W"
+  ],
+  "months": [
+   1,
+   2,
+   11,
+   12
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 126.22393346088435
+ },
+ "W_test": {
+  "n": 1000,
+  "images_shape": [
+   1000,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 10,
+  "per_class_max": 10,
+  "domain": [
+   "W"
+  ],
+  "months": [
+   1,
+   2,
+   11,
+   12
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 125.47063455303997
+ },
+ "P_hold": {
+  "n": 500,
+  "images_shape": [
+   500,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 5,
+  "per_class_max": 5,
+  "domain": [
+   "P"
+  ],
+  "months": [
+   3,
+   4
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 128.53219789009353
+ },
+ "P_test": {
+  "n": 1000,
+  "images_shape": [
+   1000,
+   224,
+   224,
+   3
+  ],
+  "dtype": "uint8",
+  "labels_match_parquet_order": true,
+  "label_min": 0,
+  "label_max": 99,
+  "n_classes": 100,
+  "per_class_min": 10,
+  "per_class_max": 10,
+  "domain": [
+   "P"
+  ],
+  "months": [
+   3,
+   4
+  ],
+  "all_north_america": true,
+  "missing_gps": 0,
+  "pixel_mean": 123.77655569727891
+ },
+ "global": {
+  "n_rows": 29950,
+  "n_pool": 16855,
+  "files_unique": true,
+  "no_file_shared_between_splits": true,
+  "y_to_name_matches_classes_json": true
+ }
+}

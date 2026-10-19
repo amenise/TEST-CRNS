@@ -1,0 +1,41 @@
+# Continual TTA experiments (E6). Streams use *_test images; the accuracy matrix uses *_hold images (never streamed).
+batch_size: 64
+# compute budget (~4 h total): ViT only, 2 seeds; long stream 1 seed
+seeds: [0]
+long_seeds: [0]
+
+sequences:
+  # the brief's sequence: Source -> Normal -> Low illumination -> Blur -> New domain, repeated twice.
+  # Severity 3 = middle of the range (ViT-S/16 source: low light 68.0 %, motion blur 55.0 % on S_test).
+  brief:
+    rounds: 2
+    stages: ["S_test:clean", "S_test:low_light_s3", "S_test:motion_blur_s3", "W_test:clean"]
+    domains: {S: "S_hold:clean", "low_light": "S_hold:low_light_s3", "motion_blur": "S_hold:motion_blur_s3", W: "W_hold:clean"}
+  # one ecological year after the breeding season: autumn migration -> winter -> spring migration -> breeding
+  year:
+    rounds: 2
+    stages: ["A_test:clean", "W_test:clean", "P_test:clean", "S_test:clean"]
+    domains: {A: "A_hold:clean", W: "W_hold:clean", P: "P_hold:clean", S: "S_hold:clean"}
+  # long stream to expose error accumulation / collapse: the brief sequence repeated 5 times
+  brief_long:
+    rounds: 5
+    stages: ["S_test:clean", "S_test:low_light_s3", "S_test:motion_blur_s3", "W_test:clean"]
+    domains: {S: "S_hold:clean", "low_light": "S_hold:low_light_s3", "motion_blur": "S_hold:motion_blur_s3", W: "W_hold:clean"}
+  # recurring TTA (Hoang et al. 2024, PeTTA): the same sequence visited 20 times (1280 steps, 80,000 images), to test
+  # whether EATA's stability on brief_long survives a long horizon. Run with explicit --methods (eata, anchored);
+  # Source does not adapt, so its numbers equal those of `brief`.
+  brief_recurring:
+    rounds: 20
+    stages: ["S_test:clean", "S_test:low_light_s3", "S_test:motion_blur_s3", "W_test:clean"]
+    domains: {S: "S_hold:clean", "low_light": "S_hold:low_light_s3", "motion_blur": "S_hold:motion_blur_s3", W: "W_hold:clean"}
+
+# budget < 4 h: 1 seed, core CTTA methods + Anchored ablations
+methods: [source, tent, eata, cotta, rdumb, anchored,
+          anchored-noanchor, anchored-nofilter, anchored-noteacher, geo_anchored]
+# ResNet-50 is not run in continual mode in the reduced budget (kept for reference if more compute is available)
+methods_override:
+  resnet50: [source, bn, tent, eata, anchored, anchored-noanchor]
+seeds_override: {resnet50: [0]}
+long_methods: [source, tent, eata, anchored]
+# detector-triggered reset (ours): EATA resets to the source model when the label-free shift detector fires
+detector_methods: [eata]

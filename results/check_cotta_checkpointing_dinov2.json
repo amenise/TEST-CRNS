@@ -1,0 +1,22 @@
+{
+ "backbone": "dinov2",
+ "condition": "S_test:clean",
+ "seed": 0,
+ "checkpointing_True": {
+  "acc": 0.513,
+  "peak_gb": 1.404881408
+ },
+ "hp": {
+  "n_aug": 8,
+  "rst": 0.01,
+  "lr": 0.001,
+  "ap": 1.01,
+  "alpha": 0.999
+ },
+ "checkpointing_False": {
+  "acc": 0.513,
+  "peak_gb": 4.140837376
+ },
+ "prediction_agreement": 0.996,
+ "max_abs_logit_diff": 0.2009720802307129
+}
